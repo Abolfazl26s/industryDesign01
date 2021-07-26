@@ -81,7 +81,9 @@ h2 {
 
   .safeWork {
     border: none !important;
-    background: $bgColorDark;
+    background: url("../../images/divider/divider-top-white.svg") no-repeat top
+        center,
+      $bgColorDark;
     color: $colorWhite;
     .safeWorkTitle {
       font-weight: bolder !important;
@@ -94,10 +96,9 @@ h2 {
 
   .managingRisk {
     border: none !important;
-    background: center;
+    background: url("../../images/divider/divider-top-black.svg") no-repeat top
+      center;
     color: $bgColorDark;
-    background-origin: border-box;
-    overflow: hidden;
     padding: 4rem 0;
     border-bottom: 0.5rem double $bgColorDark !important;
     .managingRiskTitle {
