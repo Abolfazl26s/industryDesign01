@@ -57,7 +57,7 @@ const menuResponsive = () => {
 
 // --------------------changeNavBar change size navBar for scroll--------------
 const changeNavBar = () => {
-  if ($(window).height() > 360) {
+  if ($(window).height() > 520) {
     let Y = 300;
     $(window).scroll(function (e) {
       e.preventDefault();
@@ -88,7 +88,7 @@ const scrollTop = () => {
     if (this.scrollY > Y) {
       $("#scrollTop").css({ visibility: "visible" });
       $("#scrollTop").click(() => {
-        $(this).scrollTop(this);
+        $(this).scrollTop(0);
       });
     } else {
       $("#scrollTop").css({ visibility: "hidden" });
