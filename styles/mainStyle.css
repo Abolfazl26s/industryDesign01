@@ -1018,7 +1018,7 @@ h2 {
 
 .aboutUs .safeWork {
   border: none !important;
-  background: #312F30;
+  background: url("../../images/divider/divider-top-white.svg") no-repeat top center, #312F30;
   color: #fff;
   background-origin: border-box;
   overflow: hidden;
