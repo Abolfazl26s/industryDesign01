@@ -81,9 +81,7 @@ h2 {
 
   .safeWork {
     border: none !important;
-    background: url("../../images/divider/divider-top-white.svg") no-repeat top
-        center,
-      $bgColorDark;
+    background: $bgColorDark;
     color: $colorWhite;
     background-origin: border-box;
     overflow: hidden;
