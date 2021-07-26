@@ -28,11 +28,10 @@
 // imports sharedFolder
 @import "./shared/shared";
 
-// imports sectionHomePage
-
-// page{
+// page
 @import "./pages/home";
 @import "./pages/aboutUs";
+@import "./pages/projects";
 
 body {
   font-family: VazirEn !important;
