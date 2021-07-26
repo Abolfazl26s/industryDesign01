@@ -1,0 +1,104 @@
+// navbar
+#offcanvasRight {
+  text-align: right !important;
+  background: #212529 !important;
+
+  .fa-arrow-right {
+    font-size: 1.5rem;
+    border: none;
+    font-weight: 100 !important;
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
+.offcanvas-end {
+  top: 0;
+  width: 400px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  right: 0;
+  overflow: hidden !important;
+}
+nav {
+  direction: ltr;
+  display: flex;
+  align-items: flex-center !important;
+  transition: height 0.3s ease-in-out;
+  background: $bgColorDark !important;
+  position: sticky !important;
+  .fa-bars {
+    font-size: 1.5rem;
+  }
+  .navbar-nav {
+    direction: rtl;
+    .nav-item {
+      min-width: 6rem;
+
+      .nav-link {
+        overflow: hidden;
+        position: relative;
+        margin: 0 0.3rem;
+        z-index: 1;
+        padding: 0.5rem;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background: $primaryColor;
+          z-index: -1;
+          transform: translateY(-300%);
+          transition: 0.3s;
+        }
+
+        &:hover {
+          color: $colorWhite;
+          &::before {
+            transform: translateY(0%);
+          }
+        }
+        &.active {
+          border-top: 2px solid $primaryColor;
+        }
+      }
+
+      // dropDownMenu
+      .dropdown-menu {
+        font-family: VazirFa !important;
+        .show {
+          transition: 0.5s linear !important;
+        }
+        background: $bgColorDark !important;
+        a {
+          color: $colorWhite !important;
+          position: relative;
+          z-index: 1;
+          overflow: hidden;
+          margin-bottom: 1rem;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: $primaryColor;
+            transition: transform 0.4s linear;
+            transform: translateX(98%);
+            z-index: -1;
+          }
+          &:hover {
+            background: transparent;
+            &::after {
+              transform: translateX(0%);
+            }
+          }
+        }
+        top: 5rem;
+      }
+    }
+  }
+}

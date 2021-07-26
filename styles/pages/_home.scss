@@ -1,0 +1,305 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+  // slider
+  .mainSlider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    #sliderTop {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      .carousel-indicators {
+        position: absolute;
+        top: 60%;
+
+        .dotSlider {
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 50%;
+
+          &.active {
+            background-color: $primaryColor !important;
+          }
+        }
+      }
+      .carousel-inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+
+        .carousel-item {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+          }
+
+          .carousel-caption {
+            position: absolute;
+            bottom: -40%;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            animation: sliderCap 5s 0.8s;
+          }
+
+          @keyframes sliderCap {
+            0% {
+              transform: translateY(10%);
+              opacity: 0;
+            }
+            20% {
+              transform: translateY(0);
+              opacity: 1;
+            }
+
+            50% {
+              transform: translateY(0);
+              opacity: 1;
+            }
+            70% {
+              transform: translateY(0);
+              opacity: 1;
+            }
+            100% {
+              transform: translateY(0%);
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ourValues {
+  width: 100%;
+  background: $bgColorDark;
+
+  .cards {
+    width: 100%;
+    position: relative;
+
+    .card {
+      position: relative;
+      top: -10rem;
+      cursor: pointer;
+      z-index: 2;
+
+      .card-body {
+        position: relative;
+        background: $bgColorCard;
+        z-index: 1;
+        overflow: hidden;
+        transition: color 0.3s ease-in-out;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background: $primaryColor;
+          z-index: -1;
+          transform: translateY(100%);
+          transition: transform 0.3s ease-in-out;
+        }
+      }
+
+      &:hover {
+        .card-body::before {
+          transform: translateY(0);
+        }
+        color: $colorWhite;
+      }
+    }
+    .context {
+      position: absolute;
+      width: 100%;
+      bottom: 0%;
+      right: 0;
+      color: $colorWhite;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      hr {
+        width: 75%;
+      }
+    }
+  }
+
+  .contentValues {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: content !important;
+    flex-wrap: wrap;
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: transparent;
+      color: $colorWhite;
+      border: none;
+
+      .card-text {
+        font-weight: 100 !important;
+      }
+
+      .card-icon {
+        .icon {
+          color: $bgColorDark;
+          font-size: 4rem;
+        }
+      }
+
+      &:hover {
+        .card-icon {
+          .icon {
+            color: $colorWhite;
+          }
+          background: $primaryColor;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            border: 2px solid $primaryColor;
+            border-radius: 50%;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            border: 2px solid $primaryColor;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .card-icon {
+        position: relative;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        background: $bgBody;
+
+        &::after {
+          transition: all 0.3s 0.3s ease-in-out;
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 120%;
+          height: 120%;
+          border: 2px solid $bgBody;
+          border-radius: 50%;
+        }
+
+        &::before {
+          transition: all 0.3s ease-in-out;
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 100%;
+          border: 2px solid $bgBody;
+          border-radius: 50%;
+        }
+
+        svg {
+          font-size: 3em;
+          color: $bgColorDark;
+        }
+      }
+    }
+  }
+}
+
+// ---------------------offer -------------------
+.offer {
+  border: none !important;
+  background: url("../images/divider/divider-top-black.svg") no-repeat;
+  background-origin: border-box;
+  overflow: hidden;
+  background-position: 100% -1%;
+  padding: 3rem 0;
+  .offerTitle {
+    font-weight: 900 !important;
+  }
+  .card {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+// ------------ laws ----------
+.laws {
+  background: url("../images/law/law-background.jpg") no-repeat center
+    bottom/cover;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+  }
+
+  .card {
+    background: transparent;
+    border: none;
+
+    .card-title {
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+  svg {
+    font-size: 4rem;
+    font-weight: 100;
+  }
+}

@@ -1,0 +1,63 @@
+.footer {
+  position: relative;
+  bottom: 0%;
+  right: 0;
+  width: 100%;
+
+  .information {
+    border: none !important;
+    background: url("../images/divider/divider-bottom.svg") no-repeat bottom
+      center;
+    background-origin: border-box;
+    overflow: hidden;
+    background-position: 100% 101%;
+    .container {
+      padding-bottom: 80px !important;
+    }
+    .card {
+      background: transparent;
+      border: none;
+      padding: 0.5rem 0.5rem;
+      h4 {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        i {
+          padding-left: 0.6rem;
+        }
+      }
+      .display-6 {
+        font-size: 2rem !important;
+        color: $colorBtn !important;
+      }
+      .social {
+        font-size: 1.5rem;
+        padding: 0.1rem;
+        margin: 0 0.3rem;
+        color: $bgColorDark;
+
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+
+      .phone {
+        font-family: VazirFa;
+        direction: ltr;
+      }
+    }
+  }
+
+  footer {
+    background: $bgColorDark;
+    direction: ltr;
+    font-size: 1rem;
+    #footerLogo {
+      width: 2.5rem;
+    }
+    .copyRight {
+      font-size: 1rem;
+    }
+  }
+}

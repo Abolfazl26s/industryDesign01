@@ -1,0 +1,19 @@
+#scrollTop {  
+  position: fixed;
+  padding: 0 !important;
+  top: 90%;
+  right: 1%;
+  z-index: 1000;
+  display: flex;
+  cursor: pointer;
+  visibility: hidden;
+    color: $primaryColor;
+    font-size: 2.5rem;
+    font-weight: 900;
+  transition: all 0.3s linear;
+  &:hover {
+    .icon {
+      color: gold;
+    }
+  }
+}

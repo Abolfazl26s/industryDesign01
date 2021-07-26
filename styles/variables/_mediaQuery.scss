@@ -1,0 +1,106 @@
+// --------------- 1440px --------------
+@media (min-width: 1440px) {
+  .vertical-divider::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    right: 0;
+    background-color: #bdc0b5;
+  }
+}
+
+//*********** 1024px ****************
+@media screen and (max-width: 1024px) {
+  header {
+    height: 80vh !important;
+  }
+}
+
+//*********** 768px ****************
+@media screen and (max-width: 768px) {
+  header {
+    height: 60vh !important;
+
+    .carousel-indicators {
+      top: 70% !important;
+    }
+  }
+
+  .card-icon {
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+
+  .information {
+    svg {
+      font-size: 1.3rem !important;
+    }
+  }
+
+  .cards {
+    top: 10rem !important;
+    margin-bottom: 10rem;
+  }
+}
+
+//*********** 425px ****************
+@media screen and (max-width: 425px) {
+  .textLogo {
+    span {
+      font-size: 1rem;
+    }
+    small {
+      letter-spacing: 0 !important;
+      margin-top: 5px !important;
+    }
+  }
+
+  header {
+    height: 50vh !important;
+
+    .carousel-item {
+      height: 50vh !important;
+    }
+    .carousel-indicators {
+      top: 90% !important;
+    }
+
+    .carousel-caption {
+      padding: 0 1rem !important;
+      h3 {
+        font-size: 1.1rem !important;
+      }
+      h1 {
+        font-size: 1.3rem !important;
+      }
+      p {
+        font-size: 0.9rem !important;
+      }
+    }
+  }
+
+  .card-icon {
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+
+  .information {
+    svg {
+      font-size: 1.3rem !important;
+    }
+  }
+
+  .cards {
+    top: 10rem !important;
+    margin-bottom: 10rem;
+  }
+}
+
+// --------------------------------
+// @media screen and (min-height: "425px") {
+//   nav {
+//     min-height: 20vh;
+//   }
+// }

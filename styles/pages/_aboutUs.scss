@@ -1,0 +1,129 @@
+h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 900 !important;
+}
+
+.aboutUs {
+  .commitmentToQuality {
+    .subContent {
+      a {
+        font-weight: 700 !important;
+        line-height: 2.2rem !important;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+
+    .list {
+      .listItem {
+        line-height: 2rem !important;
+
+        position: relative;
+        padding: 0.6rem;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -8%;
+          width: 100%;
+          height: 100%;
+          border-bottom: 1px dashed;
+        }
+        a {
+          position: relative;
+          font-weight: 100 !important;
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+
+        .bi-caret-left-fill {
+          color: $primaryColor;
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+
+  // coreValues
+  .coreValues {
+    .values {
+      font-family: VazirFa;
+      .numberValue {
+        width: 3.5rem;
+        height: 3.5rem;
+        clip-path: circle(40% at 50% 50%);
+        padding: 2rem !important;
+        color: $colorWhite;
+        background: $colorBtn;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-left: 0.5rem;
+      }
+
+      .contentValue {
+        width: 100%;
+        .titleContent {
+          font-weight: 700 !important;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .safeWork {
+    border: none !important;
+    background: url("../../images/divider/divider-top-white.svg") no-repeat top
+        center,
+      $bgColorDark;
+    color: $colorWhite;
+    background-origin: border-box;
+    overflow: hidden;
+    background-position: 100% -1%;
+    .safeWorkTitle {
+      font-weight: bolder !important;
+    }
+    .card {
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  .managingRisk {
+    border: none !important;
+    background: url("../../images/divider/divider-top-black.svg") no-repeat top
+      center;
+    color: $bgColorDark;
+    background-origin: border-box;
+    overflow: hidden;
+    padding: 4rem 0;
+    border-bottom: 0.5rem double $bgColorDark !important;
+    .managingRiskTitle {
+      font-weight: 900 !important;
+    }
+    .card {
+      background-color: transparent;
+      border: none;
+      h5 {
+        font-weight: 500 !important;
+      }
+      p {
+        font-weight: 100 !important;
+      }
+
+      a {
+        &:hover {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
