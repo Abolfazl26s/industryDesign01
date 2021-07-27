@@ -9,9 +9,9 @@ $(function () {
     $(".dropdown-menu").removeClass("show");
   });
 
-  $(window).resize(function () {
-    location.reload();
-  });
+  // $(window).resize(function () {
+  //   location.reload();
+  // });
 
   $(window).on("orientationchange", function (event) {
     event.preventDefault();
