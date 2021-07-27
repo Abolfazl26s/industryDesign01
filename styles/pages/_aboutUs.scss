@@ -5,6 +5,13 @@ h2 {
 }
 
 .aboutUs {
+  a {
+    position: relative;
+    font-weight: 100 !important;
+    &:hover {
+      color: $colorBtn !important;
+    }
+  }
   .commitmentToQuality {
     .subContent {
       a {
@@ -31,13 +38,6 @@ h2 {
           width: 100%;
           height: 100%;
           border-bottom: 1px dashed;
-        }
-        a {
-          position: relative;
-          font-weight: 100 !important;
-          &:hover {
-            color: $primaryColor;
-          }
         }
 
         .bi-caret-left-fill {
@@ -94,7 +94,7 @@ h2 {
 
   .managingRisk {
     border: none !important;
-    
+
     color: $bgColorDark;
     padding: 4rem 0;
     border-bottom: 0.5rem double $bgColorDark !important;
