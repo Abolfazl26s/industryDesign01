@@ -13,6 +13,11 @@ $(function () {
     location.reload();
   });
 
+  $(window).on("orientationchange", function (event) {
+    event.preventDefault();
+    location.reload();
+  });
+
   menuResponsive();
 
   changeNavBar();
