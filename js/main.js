@@ -14,8 +14,9 @@ $(function () {
   // });
 
   $(window).on("orientationchange", function (event) {
-    event.preventDefault();
     location.reload();
+
+    console.log("rotate");
   });
 
   menuResponsive();
