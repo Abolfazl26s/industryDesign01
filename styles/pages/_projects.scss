@@ -1,39 +1,32 @@
+@import "../variables/lightBox";
+
 .projects {
   width: 100%;
   min-height: 100vh;
-direction: rtl !important;
+
+  .portfolio-menu {
+    text-align: center;
+  }
+  .portfolio-menu ul li {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    -webkit-transition: all 05s ease;
+    -moz-transition: all 05s ease;
+    -ms-transition: all 05s ease;
+    -o-transition: all 05s ease;
+    transition: all 0.5s ease;
+  }
+
+  .portfolio-item .item {
+    /*width:303px;*/
+    float: left !important;
+    margin-bottom: 10px;
+  }
+
   .projectTitle {
     font-weight: bolder !important;
   }
-}
-
-.svg-wrapper {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 auto;
-  width: 100%;
-}
-.shape {
-  stroke-dasharray: 140 540;
-  stroke-dashoffset: -474;
-  stroke-width: 8px;
-  fill: transparent;
-  stroke: rgb(233, 137, 11);
-  border-bottom: 5px solid black;
-  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-}
-.text {
-  font-family: "Roboto Condensed";
-  font-size: 22px;
-  line-height: 32px;
-  letter-spacing: 8px;
-  color: #fff;
-  top: -48px;
-  position: relative;
-}
-.svg-wrapper:hover .shape {
-  stroke-width: 2px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 760;
 }

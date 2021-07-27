@@ -1420,7 +1420,7 @@
       position: "relative",
     },
     initLayout: true,
-    originLeft: true,
+    originLeft: false,
     originTop: true,
     resize: true,
     resizeContainer: true,

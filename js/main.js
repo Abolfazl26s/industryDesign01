@@ -1,4 +1,5 @@
 $(function () {
+  changeNavBar();
   $(".offcanvas-header").hide();
   $("#btnOffcanvasRight").hide();
 
@@ -15,7 +16,6 @@ $(function () {
 
   menuResponsive();
 
-  changeNavBar();
   getYear();
   scrollTop();
   console.log($(window).height());
