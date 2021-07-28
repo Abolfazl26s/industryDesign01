@@ -25,6 +25,20 @@
 @import "./variables/colors";
 @import "./variables/mediaQuery";
 
+$bgColorDark: #312f30;
+
+$bgBody: #dde1dc;
+
+$bgColorCard: #dee0d5;
+
+$primaryColor: #feb800;
+
+$secondaryColor: rgba(0,0,0,.4);
+
+$colorBtn: #f26522;
+
+$colorWhite: #fff;
+
 // imports sharedFolder
 @import "./shared/shared";
 
@@ -32,6 +46,7 @@
 @import "./pages/home";
 @import "./pages/aboutUs";
 @import "./pages/projects";
+@import "./pages/contact";
 
 body {
   font-family: VazirEn !important;

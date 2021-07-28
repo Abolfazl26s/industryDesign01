@@ -137,7 +137,7 @@ nav {
           align-items: flex-center !important;
   -webkit-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
-  background: #312F30 !important;
+  background: #312f30 !important;
   position: -webkit-sticky !important;
   position: sticky !important;
 }
@@ -192,7 +192,7 @@ nav .navbar-nav .nav-item .nav-link.active {
 
 nav .navbar-nav .nav-item .dropdown-menu {
   font-family: VazirFa !important;
-  background: #312F30 !important;
+  background: #312f30 !important;
   top: 5rem;
 }
 
@@ -249,7 +249,7 @@ nav .navbar-nav .nav-item .dropdown-menu a:hover::after {
   height: 100vh;
   direction: ltr;
   overflow: hidden !important;
-  background: #312F30;
+  background: #312f30;
 }
 
 .loading .loader {
@@ -526,14 +526,14 @@ nav .navbar-nav .nav-item .dropdown-menu a:hover::after {
 
 .footer .information .card .display-6 {
   font-size: 2rem !important;
-  color: #F26522 !important;
+  color: #f26522 !important;
 }
 
 .footer .information .card .social {
   font-size: 1.5rem;
   padding: 0.1rem;
   margin: 0 0.3rem;
-  color: #312F30;
+  color: #312f30;
 }
 
 .footer .information .card .social:hover {
@@ -546,7 +546,7 @@ nav .navbar-nav .nav-item .dropdown-menu a:hover::after {
 }
 
 .footer footer {
-  background: #312F30;
+  background: #312f30;
   direction: ltr;
   font-size: 1rem;
 }
@@ -692,7 +692,7 @@ header .mainSlider #sliderTop .carousel-inner .carousel-item .carousel-caption {
 
 .ourValues {
   width: 100%;
-  background: #312F30;
+  background: #312f30;
 }
 
 .ourValues .cards {
@@ -709,7 +709,7 @@ header .mainSlider #sliderTop .carousel-inner .carousel-item .carousel-caption {
 
 .ourValues .cards .card .card-body {
   position: relative;
-  background: #DEE0D5;
+  background: #dee0d5;
   z-index: 1;
   overflow: hidden;
   -webkit-transition: color 0.3s ease-in-out;
@@ -804,7 +804,7 @@ header .mainSlider #sliderTop .carousel-inner .carousel-item .carousel-caption {
 }
 
 .ourValues .contentValues .card .card-icon .icon {
-  color: #312F30;
+  color: #312f30;
   font-size: 4rem;
 }
 
@@ -847,7 +847,7 @@ header .mainSlider #sliderTop .carousel-inner .carousel-item .carousel-caption {
   width: 8rem;
   height: 8rem;
   border-radius: 50%;
-  background: #DDE1DC;
+  background: #dde1dc;
 }
 
 .ourValues .contentValues .card .card-icon::after {
@@ -861,7 +861,7 @@ header .mainSlider #sliderTop .carousel-inner .carousel-item .carousel-caption {
           transform: translate(-50%, -50%);
   width: 120%;
   height: 120%;
-  border: 2px solid #DDE1DC;
+  border: 2px solid #dde1dc;
   border-radius: 50%;
 }
 
@@ -876,13 +876,13 @@ header .mainSlider #sliderTop .carousel-inner .carousel-item .carousel-caption {
           transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  border: 2px solid #DDE1DC;
+  border: 2px solid #dde1dc;
   border-radius: 50%;
 }
 
 .ourValues .contentValues .card .card-icon svg {
   font-size: 3em;
-  color: #312F30;
+  color: #312f30;
 }
 
 .offer {
@@ -946,7 +946,7 @@ h2 {
 }
 
 .aboutUs a:hover {
-  color: #F26522 !important;
+  color: #f26522 !important;
 }
 
 .aboutUs .commitmentToQuality .subContent a {
@@ -990,7 +990,7 @@ h2 {
           clip-path: circle(40% at 50% 50%);
   padding: 2rem !important;
   color: #fff;
-  background: #F26522;
+  background: #f26522;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1018,7 +1018,7 @@ h2 {
 
 .aboutUs .safeWork {
   border: none !important;
-  background: #312F30;
+  background: #312f30;
   color: #fff;
 }
 
@@ -1033,9 +1033,9 @@ h2 {
 
 .aboutUs .managingRisk {
   border: none !important;
-  color: #312F30;
+  color: #312f30;
   padding: 4rem 0;
-  border-bottom: 0.5rem double #312F30 !important;
+  border-bottom: 0.5rem double #312f30 !important;
 }
 
 .aboutUs .managingRisk .managingRiskTitle {
@@ -1536,9 +1536,32 @@ img.mfp-img {
   font-weight: bolder !important;
 }
 
+.contact .contactTitle {
+  text-align: center;
+}
+
+.contact .contactTitle h1 {
+  font-weight: bolder !important;
+}
+
+.contact form .btn.btnReset {
+  color: #df4040 !important;
+}
+
+.contact form .btn.btnSubmit {
+  background-image: radial-gradient(circle 976px at 51.2% 51%, #209d10 0%, #209d10 0%, #209d10 17.3%, #209d10 58.8%, #209d10 71.4%, #209d10 100.2%, #bbbbbb 100.2%);
+  width: 6rem !important;
+  color: #fff;
+}
+
+.contact iframe {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: VazirEn !important;
-  background-color: #DDE1DC;
+  background-color: #dde1dc;
 }
 
 body a,
@@ -1553,7 +1576,7 @@ body .card {
 }
 
 body .card .btn {
-  background: #F26522;
+  background: #f26522;
   color: #fff;
   font-weight: 100 !important;
   width: 5rem;
@@ -1569,7 +1592,7 @@ body .card .btn::after {
   right: 0;
   width: 100%;
   height: 100%;
-  background: #312F30;
+  background: #312f30;
   -webkit-transform: translate(100%, 100%);
           transform: translate(100%, 100%);
   -webkit-transition: 0.3s ease-in-out;
