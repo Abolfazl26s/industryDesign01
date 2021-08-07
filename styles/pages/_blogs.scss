@@ -1,0 +1,71 @@
+.blogs {
+  .asideRight {
+    .categories {
+      .listItem {
+        line-height: 2rem !important;
+
+        position: relative;
+        padding: 0.6rem;
+        overflow: hidden;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -8%;
+          width: 100%;
+          height: 100%;
+          border-bottom: 1px dashed;
+        }
+
+        .bi-caret-left-fill {
+          color: $primaryColor;
+          font-size: 0.6rem;
+        }
+      }
+    }
+
+    .search {
+      form {
+        border: 1px solid;
+        border-radius: 0.2rem;
+        input {
+          background: transparent;
+          outline: none;
+          border: none;
+
+          &:focus {
+            background: transparent;
+            outline: none;
+            border: none;
+          }
+        }
+        button[type="submit"] {
+          width: 2.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  .blogs {
+    .blog {
+      .card {
+        background: transparent;
+
+        a {
+          &:hover {
+            color: orange;
+          }
+
+          &.btn{
+              border: none;
+          }
+        }
+      }
+    }
+  }
+}

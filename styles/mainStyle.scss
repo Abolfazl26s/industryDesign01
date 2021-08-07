@@ -49,6 +49,7 @@ $colorWhite: #fff;
 @import "./pages/aboutUs";
 @import "./pages/projects";
 @import "./pages/contact";
+@import "./pages/blogs";
 
 body {
   font-family: VazirEn !important;
@@ -64,7 +65,6 @@ body {
     // display: none;
   }
 
-  
   .card {
     margin: 1rem;
     .btn {

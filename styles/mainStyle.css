@@ -1600,6 +1600,71 @@ img.mfp-img {
   height: 100%;
 }
 
+.blogs .asideRight .categories .listItem {
+  line-height: 2rem !important;
+  position: relative;
+  padding: 0.6rem;
+  overflow: hidden;
+}
+
+.blogs .asideRight .categories .listItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -8%;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px dashed;
+}
+
+.blogs .asideRight .categories .listItem .bi-caret-left-fill {
+  color: #feb800;
+  font-size: 0.6rem;
+}
+
+.blogs .asideRight .search form {
+  border: 1px solid;
+  border-radius: 0.2rem;
+}
+
+.blogs .asideRight .search form input {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.blogs .asideRight .search form input:focus {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.blogs .asideRight .search form button[type="submit"] {
+  width: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+}
+
+.blogs .blogs .blog .card {
+  background: transparent;
+}
+
+.blogs .blogs .blog .card a:hover {
+  color: orange;
+}
+
+.blogs .blogs .blog .card a.btn {
+  border: none;
+}
+
 body {
   font-family: VazirEn !important;
   background-color: #dde1dc;
