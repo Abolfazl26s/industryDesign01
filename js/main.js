@@ -18,7 +18,8 @@ $(function () {
 
   getYear();
   scrollTop();
-  console.log($(window).height());
+
+  validationContactForm();
 });
 
 // ----------------------menuResponsive open right to left------------------
@@ -93,5 +94,34 @@ const scrollTop = () => {
     } else {
       $("#scrollTop").css({ visibility: "hidden" });
     }
+  });
+};
+
+// validation from
+
+const validationContactForm = () => {
+  $("#contact").validate({
+    rules: {
+      fullName: "required",
+      email: {
+        required: true,
+        email: true,
+      },
+      message: {
+        required: true,
+        minlength: 20,
+      },
+    },
+    messages: {
+      fullName: "نام را وارد نمایید",
+      email: {
+        required: "پست الکترونیک خود را وارد نمایید",
+        email: "فرمت پست الکترونیک شما نادرست می باشد",
+      },
+      message: {
+        required: "متن پیام را وارد نمایید",
+        minlength: "تعداد کاراتر نباید کمتر از 20 عدد باشد",
+      },
+    },
   });
 };

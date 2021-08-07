@@ -19,6 +19,8 @@
   src: url("../fonts/icons/Linearicons.eot"),
     url("../fonts/icons/Linearicons.svg"), url("../fonts/icons/Linearicons.ttf"),
     url("../fonts/icons/Linearicons.woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 // imports
@@ -33,7 +35,7 @@ $bgColorCard: #dee0d5;
 
 $primaryColor: #feb800;
 
-$secondaryColor: rgba(0,0,0,.4);
+$secondaryColor: rgba(0, 0, 0, 0.4);
 
 $colorBtn: #f26522;
 
@@ -61,6 +63,8 @@ body {
   .main {
     // display: none;
   }
+
+  
   .card {
     margin: 1rem;
     .btn {
