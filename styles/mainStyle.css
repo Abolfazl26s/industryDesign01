@@ -548,7 +548,7 @@ nav .navbar-nav .nav-item .dropdown-menu a:hover::after {
 }
 
 .footer footer {
-  background: #312f30;
+  background-color: #312f30;
   direction: ltr;
   font-size: 1rem;
 }
@@ -1668,6 +1668,7 @@ img.mfp-img {
 body {
   font-family: VazirEn !important;
   background-color: #dde1dc;
+  background: url("../images/background.png") repeat;
 }
 
 body a,
